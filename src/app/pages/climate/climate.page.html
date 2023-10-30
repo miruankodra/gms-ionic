@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Climate</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding h-100 d-flex ion-align-items-center">
+  <ion-title class="h2 my-2 ">Live Parametres</ion-title>
+
+    <ion-card class="ion-padding">
+      <ion-card-header>
+        <ion-card-title color="success"><h3>Temperature</h3></ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <h1>{{climate.temperature}} °C</h1>
+      </ion-card-content>
+    </ion-card>
+
+
+    <ion-card class="ion-padding">
+      <ion-card-header>
+        <ion-card-title color="success"><h3>Air Humidity</h3></ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <h1 >{{climate.air_humidity}} %</h1>
+      </ion-card-content>
+    </ion-card>
+
+
+    <ion-card class="ion-padding">
+    <ion-card-header>
+      <ion-card-title color="success"><h3>Soil Humidity</h3></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>{{climate.soil_humidity}} %</h1>
+    </ion-card-content>
+  </ion-card> 
+
+
+</ion-content>
