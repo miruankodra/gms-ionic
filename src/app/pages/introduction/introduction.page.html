@@ -1,0 +1,45 @@
+<ion-content [fullscreen]="true" class="no-scroll" color="mint">
+  <swiper-container class="">
+    <swiper-slide class="flex-center flex-column p-main">
+      <img src="../../../assets/images/greenhouse.png" alt="">
+      <div class="flex-column">
+        <ion-label class="heading-lbl">Welcome to GMS!</ion-label>
+        <ion-label class="sub-lbl">Lorem ipsum dorem sium amet un vicius at permetum mullecius.</ion-label>
+      </div>
+    </swiper-slide>
+    <swiper-slide class="flex-center flex-column p-main login-slide">
+      <section>
+        <ion-label class="heading-lbl">GMS.</ion-label>
+          <ion-item lines="none" fill="outline" class="ion-margin" color="none">
+            <ion-input placeholder="Email Address"></ion-input>
+          </ion-item>
+          <ion-item lines="none" fill="outline" class="ion-margin">
+            <ion-input type="password" placeholder="Password"></ion-input>
+          </ion-item>
+        <div class="ion-padding-horizontal ion-margin-bottom">
+<!--          <ion-button color="vivi-primary" class="app-button get-started-button ion-margin-horizontal" expand="block">-->
+<!--            Create an Account-->
+<!--          </ion-button>-->
+          <ion-button fill="outline" color="dark" class="ion-margin-top" expand="block" (click)="login()">
+<!--            <ion-icon slot="start" name="logo-google"></ion-icon> -->
+            Login
+          </ion-button>
+        </div>
+
+<!--        <ion-note class="ion-margin-top">Already have an account? Click here to Login!</ion-note>-->
+<!--        <div class="horizontal-divider ion-margin-vertical"></div>-->
+<!--        <div class="btn-container ion-padding-horizontal ion-margin-bottom">-->
+<!--          <ion-button fill="outline" color="dark" class="app-button get-started-button ion-margin-top" expand="block">-->
+<!--            <ion-icon slot="start" name="logo-google"></ion-icon> Continue with Google-->
+<!--          </ion-button>-->
+<!--          <ion-button fill="outline" color="dark" class="app-button get-started-button ion-margin-top" expand="block">-->
+<!--            <ion-icon slot="start" name="logo-facebook"></ion-icon> Continue with Facebook-->
+<!--          </ion-button>-->
+<!--          <ion-button fill="outline" color="dark" class="app-button get-started-button ion-margin-top" expand="block">-->
+<!--            <ion-icon slot="start" name="logo-apple"></ion-icon> Continue with Apple-->
+<!--          </ion-button>-->
+<!--        </div>-->
+      </section>
+    </swiper-slide>
+  </swiper-container>
+</ion-content>

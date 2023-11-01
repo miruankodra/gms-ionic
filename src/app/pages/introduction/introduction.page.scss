@@ -1,0 +1,38 @@
+ion-content{
+  swiper-container{
+    height: 100%;
+    width: 100%;
+    swiper-slide{
+      padding: 2rem;
+      img{
+        max-width: none;
+        width: 21rem;
+        z-index: 1;
+        margin-bottom: 20px;
+      }
+      div{
+        ion-label{
+          margin-bottom: 20px;
+          text-align: left;
+        }
+        .sub-lbl{
+          line-height: 26px;
+        }
+      }
+    }
+    .login-slide{
+      text-align: center;
+      ion-input, ion-item{
+        --ion-background-color: transparent;
+        font-size: 20px;
+      }
+      ion-item{
+        margin-top: 10px;
+      }
+      ion-button{
+        height: 56px;
+        font-size: 20px;
+      }
+    }
+  }
+}
