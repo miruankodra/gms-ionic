@@ -1,13 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Login</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="no-scroll" color="mint">
+      <section class="h-full w-full flex-column flex-center">
+        <ion-label class="heading-lbl">GMS.</ion-label>
+        <ion-item lines="none" fill="outline" class="ion-margin" color="none">
+          <ion-input placeholder="Email Address"></ion-input>
+        </ion-item>
+        <ion-item lines="none" fill="outline" class="ion-margin">
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+        <div class="ion-padding-horizontal ion-margin-bottom w-full">
+          <ion-button fill="outline" color="dark" class="ion-margin-top" expand="block">
+            Login
+          </ion-button>
+        </div>
+      </section>
 </ion-content>

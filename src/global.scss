@@ -24,3 +24,123 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+/* Merryweather Font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Custom Colors */
+
+//Mint
+:root {
+  --ion-color-mint: #cdf2d3;
+  --ion-color-mint-rgb: 205,242,211;
+  --ion-color-mint-contrast: #000000;
+  --ion-color-mint-contrast-rgb: 0,0,0;
+  --ion-color-mint-shade: #b4d5ba;
+  --ion-color-mint-tint: #d2f3d7;
+}
+
+.ion-color-mint {
+  --ion-color-base: var(--ion-color-mint);
+  --ion-color-base-rgb: var(--ion-color-mint-rgb);
+  --ion-color-contrast: var(--ion-color-mint-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-mint-contrast-rgb);
+  --ion-color-shade: var(--ion-color-mint-shade);
+  --ion-color-tint: var(--ion-color-mint-tint);
+}
+
+// Water Blue
+:root {
+  --ion-color-water-blue: #1ac3f3;
+  --ion-color-water-blue-rgb: 26,195,243;
+  --ion-color-water-blue-contrast: #000000;
+  --ion-color-water-blue-contrast-rgb: 0,0,0;
+  --ion-color-water-blue-shade: #17acd6;
+  --ion-color-water-blue-tint: #31c9f4;
+}
+
+.ion-color-water-blue {
+  --ion-color-base: var(--ion-color-water-blue);
+  --ion-color-base-rgb: var(--ion-color-water-blue-rgb);
+  --ion-color-contrast: var(--ion-color-water-blue-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-water-blue-contrast-rgb);
+  --ion-color-shade: var(--ion-color-water-blue-shade);
+  --ion-color-tint: var(--ion-color-water-blue-tint);
+}
+
+// Light Gray
+:root {
+  --ion-color-light-gray: #F2F2F2;
+  --ion-color-light-gray-rgb: 242,242,242;
+  --ion-color-light-gray-contrast: #000000;
+  --ion-color-light-gray-contrast-rgb: 0,0,0;
+  --ion-color-light-gray-shade: #d5d5d5;
+  --ion-color-light-gray-tint: #f3f3f3;
+}
+
+.ion-color-light-gray {
+  --ion-color-base: var(--ion-color-light-gray);
+  --ion-color-base-rgb: var(--ion-color-light-gray-rgb);
+  --ion-color-contrast: var(--ion-color-light-gray-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-light-gray-contrast-rgb);
+  --ion-color-shade: var(--ion-color-light-gray-shade);
+  --ion-color-tint: var(--ion-color-light-gray-tint);
+}
+
+/* Setup */
+*{
+  //font-family: 'Merriweather', serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Custom Global Classes */
+.no-scroll{
+  --overflow: hidden;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.p-main{
+  --padding-top: 2rem;
+  --padding-bottom: 2rem;
+  --padding-start: 2rem;
+  --padding-end: 2rem;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-lbl{
+  font-size: 30px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.sub-lbl{
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 400;
+}
