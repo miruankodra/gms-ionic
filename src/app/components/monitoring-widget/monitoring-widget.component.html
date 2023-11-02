@@ -1,4 +1,7 @@
-<div class="widget flex-column flex-center">
-  <ion-icon name="thermometer-outline"></ion-icon>
-  <ion-label class="sub-lbl">39 &#8451;</ion-label>
-</div>
+<ion-card class="widget flex-column flex-center">
+<!--  <ion-icon name="thermometer-outline"></ion-icon>-->
+  <ion-icon *ngIf="type === 'temperature'" name="{{ionIcon}}"></ion-icon>
+  <img *ngIf="type !== 'temperature'" src="assets/images/icons/{{ionIcon}}">
+  <ion-label class="sub-lbl">39 {{( type === 'temperature' ) ? '&#8451;' : '%'}}</ion-label>
+</ion-card>
+

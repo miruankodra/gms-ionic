@@ -1,10 +1,22 @@
 .widget{
+  margin: 1rem 0.5rem;
   width: 139px;
   height: 139px;
   background-color: var(--ion-color-mint);
   border-radius: 22px;
+  img{
+    width: 40px;
+    height: 40px;
+  }
   ion-icon{
     font-size: 40px;
+    color: black;
+  }
+  img, ion-icon{
     margin-bottom: 10px;
+  }
+  ion-label{
+    color: black;
+    font-weight: 600
   }
 }

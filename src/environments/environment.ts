@@ -5,8 +5,7 @@
 export const environment = {
   production: false,
   backendURI: 'http://127.0.0.1:8000/api',
-  CAPACITOR_ANDROID_STUDIO_PATH: "/snap/bin/android-studio"
-
+  // CAPACITOR_ANDROID_STUDIO_PATH: "/snap/bin/android-studio"
 };
 
 /*

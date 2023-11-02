@@ -1,0 +1,31 @@
+ion-content{
+  .info-card{
+    margin: 2rem 0;
+    width: 100%;
+    ion-list{
+      --ion-background-color: transparent;
+    }
+  }
+
+  #monitor{
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+
+  #taskList{
+    ion-list{
+      ion-list-header{
+        padding: 0;
+        ion-card-header{
+          padding: 1rem 0;
+        }
+      }
+      .list-header{
+        margin-bottom: 20px;
+      }
+      ion-item{
+        --inner-padding-end: 0;
+      }
+    }
+  }
+}

@@ -19,7 +19,7 @@ export class IntroductionPage implements OnInit {
   }
 
   login() {
-    this.navCtrl.navigateForward('home')
+    this.navCtrl.navigateForward('home/home')
   }
 
 }

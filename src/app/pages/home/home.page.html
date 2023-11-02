@@ -4,5 +4,79 @@
 <!--  </ion-toolbar>-->
 <!--</ion-header>-->
 <ion-content [fullscreen]="true" class="p-main">
-  <app-monitoring-widget/>
+
+  <div class="header">
+    <ion-label class="main-lbl">Hello <br> <span class="green_text_gradient">Greenfingers!</span></ion-label>
+  </div>
+
+  <ion-card class="info-card" color="light-gray">
+    <ion-card-header>
+      <ion-card-title>Greenhouse</ion-card-title>
+      <ion-card-subtitle>Admin</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <div>
+        <ion-label>Area: 50m</ion-label>
+      </div>
+      <ion-label class="ion-margin-top">Temperature is to high! Taking action...</ion-label>
+<!--      <ion-list>-->
+<!--        <ion-item>Temperature is to high! Taking action...</ion-item>-->
+<!--      </ion-list>-->
+    </ion-card-content>
+  </ion-card>
+
+  <section id="monitor" class="flex-row flex-between">
+    <app-monitoring-widget [type]="'temperature'"/>
+    <app-monitoring-widget [type]="'air_humidity'"/>
+    <app-monitoring-widget [type]="'soil_humidity'"/>
+  </section>
+
+  <section id="taskList">
+    <ion-list>
+      <ion-list-header>
+        <ion-card-header>Your tasks</ion-card-header>
+      </ion-list-header>
+      <div class="list-header flex-row flex-between ">
+        <ion-label class="sub-lbl">Name</ion-label>
+        <ion-label class="sub-lbl">Status</ion-label>
+      </div>
+      <ion-item class="w-full no-ion-padding">
+        <div class="flex-row flex-between w-full">
+          <ion-label class="w-50 sub-lbl">Lorem ipsum torum se si paget...</ion-label>
+          <ion-badge color="success" slot="start">Completed</ion-badge>
+        </div>
+      </ion-item>
+      <ion-item class="w-full no-ion-padding">
+        <div class="flex-row flex-between w-full">
+          <ion-label class="w-50 sub-lbl">Lorem ipsum torum se si paget...</ion-label>
+          <ion-badge color="success" slot="start">Completed</ion-badge>
+        </div>
+      </ion-item>
+      <ion-item class="w-full no-ion-padding">
+        <div class="flex-row flex-between w-full">
+          <ion-label class="w-50 sub-lbl">Lorem ipsum torum se si paget...</ion-label>
+          <ion-badge color="success" slot="start">Completed</ion-badge>
+        </div>
+      </ion-item>
+      <ion-item class="w-full no-ion-padding">
+        <div class="flex-row flex-between w-full">
+          <ion-label class="w-50 sub-lbl">Lorem ipsum torum se si paget...</ion-label>
+          <ion-badge color="success" slot="start">Completed</ion-badge>
+        </div>
+      </ion-item>
+      <ion-item class="w-full no-ion-padding">
+        <div class="flex-row flex-between w-full">
+          <ion-label class="w-50 sub-lbl">Lorem ipsum torum se si paget...</ion-label>
+          <ion-badge color="success" slot="start">Completed</ion-badge>
+        </div>
+      </ion-item>
+      <ion-item class="w-full no-ion-padding">
+        <div class="flex-row flex-between w-full">
+          <ion-label class="w-50 sub-lbl">Lorem ipsum torum se si paget...</ion-label>
+          <ion-badge color="success" slot="start">Completed</ion-badge>
+        </div>
+      </ion-item>
+    </ion-list>
+  </section>
+
 </ion-content>
