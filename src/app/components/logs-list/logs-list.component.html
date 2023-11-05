@@ -1,0 +1,62 @@
+<section id="logsList">
+  <ion-list>
+    <ion-list-header>
+      <ion-card-header>Logs</ion-card-header>
+    </ion-list-header>
+      <ion-grid>
+        <ion-row class="ion-margin-bottom">
+          <ion-col>
+            <ion-label class="grid-label">Time</ion-label>
+          </ion-col>
+          <ion-col size="6">
+            <ion-label class="grid-label">Log</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-label class="grid-label">Creator</ion-label>
+          </ion-col>
+        </ion-row>
+
+        <ion-item class="no-ion-padding" *ngFor="let log of logs">
+          <ion-row>
+            <ion-col><ion-label class="">{{log.time}}</ion-label></ion-col>
+            <ion-col size="6" style="width: 100%"><ion-label class="w-90">{{log.log}}</ion-label></ion-col>
+            <ion-col class="badge-item"><ion-badge class="list-badge" color="success" slot="">{{log.creator}}</ion-badge></ion-col>
+          </ion-row>
+        </ion-item>
+      </ion-grid>
+
+  </ion-list>
+</section>
+
+
+
+
+
+<!--<ion-item class="w-full no-ion-padding">-->
+<!--  <div class="flex-row flex-between w-full">-->
+<!--    <ion-label class="sub-lbl">12:45</ion-label>-->
+<!--    <ion-label class="w-50 sub-lbl">Lorem ipsum torum se si paget...</ion-label>-->
+<!--    <ion-badge color="success" slot="start">Bot</ion-badge>-->
+<!--  </div>-->
+<!--</ion-item>-->
+<!--<ion-item class="w-full no-ion-padding">-->
+<!--  <div class="flex-row flex-between w-full">-->
+<!--    <ion-label class="sub-lbl">12:45</ion-label>-->
+<!--    <ion-label class="w-50 sub-lbl">Lorem ipsum torum se si paget...</ion-label>-->
+<!--    <ion-badge color="success" slot="start">Bot</ion-badge>-->
+<!--  </div>-->
+<!--</ion-item>-->
+<!--<ion-item class="w-full no-ion-padding">-->
+<!--  <div class="flex-row flex-between w-full">-->
+<!--    <ion-label class="sub-lbl">12:45</ion-label>-->
+<!--    <ion-label class="w-50 sub-lbl">Lorem ipsum torum se si paget...</ion-label>-->
+<!--    <ion-badge color="success" slot="start">Bot</ion-badge>-->
+<!--  </div>-->
+<!--</ion-item>-->
+<!--<ion-item class="w-full no-ion-padding">-->
+<!--  <div class="flex-row flex-between w-full">-->
+<!--    <ion-label class="sub-lbl">12:45</ion-label>-->
+<!--    <ion-label class="w-50 sub-lbl">Lorem ipsum torum se si paget...</ion-label>-->
+<!--    <ion-badge color="success" slot="start">Bot</ion-badge>-->
+<!--  </div>-->
+<!--</ion-item>-->

@@ -8,6 +8,8 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
 import {MonitoringWidgetComponent} from "../../components/monitoring-widget/monitoring-widget.component";
+import {TaskListComponent} from "../../components/task-list/task-list.component";
+import {LogsListComponent} from "../../components/logs-list/logs-list.component";
 
 @NgModule({
   imports: [
@@ -16,6 +18,6 @@ import {MonitoringWidgetComponent} from "../../components/monitoring-widget/moni
     IonicModule,
     HomePageRoutingModule
   ],
-    declarations: [HomePage, MonitoringWidgetComponent]
+  declarations: [HomePage, MonitoringWidgetComponent, TaskListComponent, LogsListComponent]
 })
 export class HomePageModule {}

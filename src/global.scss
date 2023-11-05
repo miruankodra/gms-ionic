@@ -110,6 +110,14 @@
   width: 100%;
 }
 
+.w-90{
+  width: 90%;
+}
+
+.w-75{
+  width: 75%;
+}
+
 .w-50{
   width: 50%;
 }
@@ -178,4 +186,9 @@
   background: -webkit-linear-gradient(315deg, #55efc4 0%, #000000 74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.list-badge{
+  width: 100%;
+  height: 20px;
 }

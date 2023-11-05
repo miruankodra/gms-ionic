@@ -29,6 +29,10 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./Authentication/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'task-manager',
+    loadChildren: () => import('./pages/task-manager/task-manager.module').then( m => m.TaskManagerPageModule)
   }
 ];
 @NgModule({

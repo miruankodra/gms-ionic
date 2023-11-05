@@ -12,6 +12,10 @@ const routes: Routes = [
         loadChildren: () => import('../pages/home/home.module').then(m => m.HomePageModule)
       },
       {
+        path: 'task-manager',
+        loadChildren: () => import('../pages/task-manager/task-manager.module').then(m => m.TaskManagerPageModule)
+      },
+      {
         path: 'control-panel',
         loadChildren: () => import('../pages/control-panel/control-panel.module').then(m => m.ControlPanelPageModule)
       },

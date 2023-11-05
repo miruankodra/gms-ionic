@@ -1,0 +1,38 @@
+#logsList{
+  ion-list{
+    ion-list-header{
+      padding: 0;
+      ion-card-header{
+        padding: 1rem 0;
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+    ion-grid{
+      --ion-grid-column-padding: 0;
+      --ion-grid-padding: 0;
+      ion-row{
+        width: 100%;
+        ion-col{
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          .grid-label{
+            font-size: 18px;
+            font-weight: 600;
+          }
+        }
+        .badge-item{
+          text-align: center;
+        }
+      }
+    }
+    .list-header{
+      margin-bottom: 20px;
+    }
+    ion-item{
+      --inner-padding-end: 0;
+    }
+  }
+}

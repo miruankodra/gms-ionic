@@ -1,31 +1,35 @@
 ion-content{
   .info-card{
+    border-radius: 22px;
     margin: 2rem 0;
     width: 100%;
-    ion-list{
-      --ion-background-color: transparent;
+    .info-label{
+      margin-bottom: 10px;
+      span{
+        font-weight: 500;
+      }
+    }
+    .home-card-footer{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid black;
+
+      ion-icon{
+        font-size: 60px;
+        margin-right: 10px;
+      }
+
+      ion-label{
+        font-weight: 500;
+      }
     }
   }
 
   #monitor{
     flex-wrap: wrap;
     margin: 1rem 0;
-  }
-
-  #taskList{
-    ion-list{
-      ion-list-header{
-        padding: 0;
-        ion-card-header{
-          padding: 1rem 0;
-        }
-      }
-      .list-header{
-        margin-bottom: 20px;
-      }
-      ion-item{
-        --inner-padding-end: 0;
-      }
-    }
   }
 }
