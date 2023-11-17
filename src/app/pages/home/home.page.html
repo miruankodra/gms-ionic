@@ -20,7 +20,7 @@
 <!--      </ion-list>-->
 
       <div class="home-card-footer">
-        <ion-icon  color="danger" name="alert-circle"></ion-icon>
+        <ion-icon  color="{{getNotificationIconColor()}}" name="{{ghStateNotificationIcon}}"></ion-icon>
         <ion-label>Temperature is to high! Taking action...</ion-label>
       </div>
     </ion-card-content>
@@ -28,10 +28,10 @@
   </ion-card>
 
   <section id="monitor" class="flex-row flex-between">
-    <app-monitoring-widget [type]="'temperature'"/>
-    <app-monitoring-widget [type]="'air_humidity'"/>
-    <app-monitoring-widget [type]="'soil_humidity'"/>
-    <app-monitoring-widget [type]="'temperature'"/>
+    <app-monitoring-widget [type]="'monitor'" unit="temperature"/>
+    <app-monitoring-widget [type]="'monitor'" unit="air_humidity"/>
+    <app-monitoring-widget [type]="'monitor'" unit="soil_humidity"/>
+    <app-monitoring-widget [type]="'monitor'" unit="temperature"/>
   </section>
 
   <app-logs-list/>

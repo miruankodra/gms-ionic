@@ -1,13 +1,68 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="ion-no-border">
   <ion-toolbar>
-    <ion-title>task-manager</ion-title>
+    <ion-title class="green_text_gradient">Task Manager</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">task-manager</ion-title>
+      <ion-title size="large">Task Manager</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <section id="main">
+    <!--  <ion-card color="light-gray" class="ion-no-margin">-->
+    <!--    <ion-card-content>-->
+    <!--        <div class="info-item">-->
+    <!--          <ion-icon color="warning" class="ion-margin-end" name="bulb-outline"></ion-icon>-->
+    <!--          <ion-label>New Task</ion-label>-->
+    <!--        </div>-->
+    <!--        <div class="ion-margin-vertical info-item">-->
+    <!--          <ion-icon color="primary" class="ion-margin-end" name="checkmark"></ion-icon>-->
+    <!--          <ion-label>In progress</ion-label>-->
+    <!--        </div>-->
+    <!--        <div class="info-item">-->
+    <!--          <ion-icon color="success" class="ion-margin-end" name="checkmark-done"></ion-icon>-->
+    <!--          <ion-label>Task Finished</ion-label>-->
+    <!--        </div>-->
+    <!--    </ion-card-content>-->
+    <!--  </ion-card>-->
+
+    <ion-searchbar placeholder="Custom Placeholder" class="ion-no-padding"></ion-searchbar>
+    <section id="taskList">
+      <ion-list>
+        <ion-grid>
+          <ion-row class="ion-margin-bottom">
+            <ion-col>
+              <ion-label class="grid-label">ID</ion-label>
+            </ion-col>
+            <ion-col size="6">
+              <ion-label class="grid-label">Task</ion-label>
+            </ion-col>
+            <ion-col>
+              <ion-label class="grid-label">Status</ion-label>
+            </ion-col>
+          </ion-row>
+
+          <ion-item class="no-ion-padding" *ngFor="let i of [].constructor(30)">
+            <ion-row>
+              <ion-col>
+                <ion-label color="primary" class="">#001</ion-label>
+              </ion-col>
+              <ion-col size="6" style="width: 100%">
+                <ion-label class="w-90">Lore ipsum dorem si amet</ion-label>
+              </ion-col>
+              <ion-col class="badge-item">
+                <ion-icon color="{{getTaskIconColor()}}" name="{{taskStatusIcon}}"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+        </ion-grid>
+
+      </ion-list>
+    </section>
+  </section>
+
+
 </ion-content>

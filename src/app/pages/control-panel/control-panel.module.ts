@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { ControlPanelPageRoutingModule } from './control-panel-routing.module';
 
 import { ControlPanelPage } from './control-panel.page';
+import {HomePageModule} from "../home/home.module";
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    ControlPanelPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        ControlPanelPageRoutingModule,
+        HomePageModule
+    ],
   declarations: [ControlPanelPage]
 })
 export class ControlPanelPageModule {}

@@ -158,6 +158,12 @@
   justify-content: space-between;
 }
 
+.flex-around{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .heading-lbl{
   font-size: 30px;
   line-height: 18px;
@@ -176,6 +182,12 @@
   font-weight: 400;
 }
 
+.info-label{
+  font-size: 14px;
+  color: gray;
+  font-weight: 500;
+}
+
 .green__gradient{
   background-color: #55efc4;
   background-image: linear-gradient(315deg, #55efc4 0%, #000000 74%);
@@ -191,4 +203,9 @@
 .list-badge{
   width: 100%;
   height: 20px;
+}
+
+.horizontal-divider{
+  width: 100%;
+  border-bottom: 1px solid black;
 }

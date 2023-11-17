@@ -65,5 +65,4 @@ constructor() { }
 
   ngOnInit() {}
 
-    protected readonly Array = Array;
 }

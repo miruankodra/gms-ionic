@@ -18,6 +18,9 @@ import {LogsListComponent} from "../../components/logs-list/logs-list.component"
     IonicModule,
     HomePageRoutingModule
   ],
+  exports: [
+    MonitoringWidgetComponent
+  ],
   declarations: [HomePage, MonitoringWidgetComponent, TaskListComponent, LogsListComponent]
 })
 export class HomePageModule {}

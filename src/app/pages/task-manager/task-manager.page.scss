@@ -1,0 +1,91 @@
+ion-content {
+  ion-header{
+    ion-toolbar{
+      ion-title{
+
+      }
+    }
+  }
+  #main {
+    padding: 1rem;
+    ion-card {
+      margin-bottom: 2rem;
+      border-radius: 20px;
+
+      ion-card-content {
+        .info-item {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+
+          ion-icon {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+
+    ion-searchbar {
+      width: 100%;
+      margin-bottom: 10px;
+      --border-radius: 20px;
+      -webkit-padding-start: 0;
+      padding-inline-start: 0;
+      -webkit-padding-end: 0;
+      padding-inline-end: 0;
+    }
+
+    #taskList {
+    }
+
+    ion-list {
+      ion-list-header {
+        padding: 0;
+
+        ion-card-header {
+          padding: 1rem 0;
+          font-size: 22px;
+          font-weight: 600;
+        }
+      }
+
+      ion-grid {
+        --ion-grid-column-padding: 0;
+        --ion-grid-padding: 0;
+
+        ion-row {
+          width: 100%;
+
+          ion-icon {
+            font-size: 20px;
+          }
+
+          ion-col {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            .grid-label {
+              font-size: 18px;
+              font-weight: 600;
+            }
+          }
+
+          .badge-item {
+            text-align: center;
+          }
+        }
+      }
+
+      .list-header {
+        margin-bottom: 20px;
+      }
+
+      ion-item {
+        --inner-padding-end: 0;
+      }
+    }
+  }
+
+}

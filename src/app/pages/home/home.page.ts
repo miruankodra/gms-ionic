@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {User} from "../../models/User";
 
 @Component({
@@ -13,9 +13,16 @@ export class HomePage implements OnInit {
     lastname: "Kodra",
     username: "m.kodra"
   }
+
+  ghStateNotificationIcon?: "checkmark-circle" | 'warning' | 'alert-circle';
   constructor() { }
 
   ngOnInit() {
+    this.ghStateNotificationIcon = "checkmark-circle";
+  }
+
+  getNotificationIconColor() {
+    return (this.ghStateNotificationIcon === "checkmark-circle") ? 'success' : (this.ghStateNotificationIcon === "warning") ? 'warning' : 'danger';
   }
 
 }

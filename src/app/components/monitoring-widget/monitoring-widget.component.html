@@ -1,7 +1,11 @@
-<ion-card class="widget flex-column flex-center">
-<!--  <ion-icon name="thermometer-outline"></ion-icon>-->
-  <ion-icon *ngIf="type === 'temperature'" name="{{ionIcon}}"></ion-icon>
-  <img *ngIf="type !== 'temperature'" src="assets/images/icons/{{ionIcon}}">
-  <ion-label class="sub-lbl">39 {{( type === 'temperature' ) ? '&#8451;' : '%'}}</ion-label>
+<ion-card *ngIf="type === 'monitor'" class="widget flex-column flex-center">
+  <ion-icon *ngIf="unit === 'temperature'" name="{{ionIcon}}"></ion-icon>
+  <img *ngIf="unit !== 'temperature'" src="assets/images/icons/{{ionIcon}}">
+  <ion-label class="sub-lbl">39 {{( unit === 'temperature' ) ? '&#8451;' : '%'}}</ion-label>
+</ion-card>
+
+<ion-card *ngIf="type === 'control'" class="widget flex-column flex-center">
+  <img *ngIf="unit !== 'temperature'" src="assets/images/icons/{{ionIcon}}" class="control-icon">
+  <ion-toggle [enableOnOffLabels]="true" labelPlacement="end"></ion-toggle>
 </ion-card>
 
